@@ -1,0 +1,96 @@
+:root{
+    --red:  #e50914;
+    --black: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--black);
+    font-family: 'Arial', Times, serif;
+    color: #FFF;
+}
+
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 8px;
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+.movie{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('../assets/capa.jpg');
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.movie .description{
+    margin-top: 10px;
+    margin-bottom: 90px;
+    margin-left: 20px;
+}
+.title{
+    margin-top: 15%;
+    margin-left: 20px;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.button{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #FFF;
+    padding: 15px 30px;
+    margin-right: 5 px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: .3s ease all;
+}
+.button:hover{
+    background-color: #FFF;
+    color: #333;
+}
+.button i{
+    margin-right: 8px;
+}
+.movie .container{
+    width: 70%;
+}
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carousel-movies{
+    margin-top: 8px;
+}
